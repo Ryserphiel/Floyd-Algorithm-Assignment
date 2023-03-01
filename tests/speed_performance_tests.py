@@ -92,11 +92,11 @@ def speed_performance_checker():
 round_imperative_speed, round_recursive_speed, round_itertools_speed = speed_performance_checker()
 
 # Round the speed performance results to two decimal places
-round_imperative_speed = round(round_imperative_speed, 2)
-round_recursive_speed = round(round_recursive_speed, 2)
-round_itertools_speed = round(round_itertools_speed, 2)
+rounded_imperative_speed = round(round_imperative_speed, 2)
+rounded_recursive_speed = round(round_recursive_speed, 2)
+rounded_itertools_speed = round(round_itertools_speed, 2)
 
 # Print out the results
-print(f"Imperative speed performance: {round_imperative_speed}s")
-print(f"Recursive speed performance: {round_recursive_speed}s")
-print(f"Itertool speed performance: {round_itertools_speed}s")
+print(f"Imperative speed performance: {rounded_imperative_speed}s")
+print(f"Recursive speed performance: {rounded_recursive_speed}s")
+print(f"Itertool speed performance: {rounded_itertools_speed}s")
