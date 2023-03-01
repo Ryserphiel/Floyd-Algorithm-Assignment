@@ -73,15 +73,17 @@ def speed_performance_checker():
     end_time = time.time()
     imperative_speed = end_time - start_time
 
-    startingTime = time.time()
+    start_time = time.time()
     for _ in range(cycle):
         recursive_floyd(graph)
-    recursive_speed = time.time() - startingTime
+    end_time = time.time()
+    recursive_speed = end_time - start_time
 
-    startingTime = time.time()
+    start_time = time.time()
     for _ in range(cycle):
         itertools_floyd(graph)
-    itertools_speed = time.time() - startingTime
+    end_time = time.time()
+    itertools_speed = end_time - start_time
 
     return (imperative_speed, recursive_speed, itertools_speed)
 
